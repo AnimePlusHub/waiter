@@ -35,6 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  provider: ^6.0.5
+  google_fonts: ^6.1.0
+  pinput: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -49,9 +52,23 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/images/icon-400.png"
+  image_path_android: "assets/images/icon-400.png"
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/images/icon-400.png
+    - assets/images/logo.png
+    - assets/images/welcome.jpg
+    - assets/images/welcome_logo.png
+  fonts:
+    - family: SmileySans
+      fonts:
+        - asset: fonts/SmileySans-Oblique.ttf
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
