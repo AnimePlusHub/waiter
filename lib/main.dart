@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
 import 'package:waiter/helper/routes.dart';
 import 'package:waiter/state/appState.dart';
-import 'package:waiter/ui/page/Auth/signin.dart';
-import 'package:waiter/ui/page/Auth/signup_email.dart';
-import 'package:waiter/ui/page/Auth/verifyEmail.dart';
-import 'package:waiter/ui/page/common/splash.dart';
-import 'package:waiter/ui/page/welcome.dart';
 import 'package:waiter/ui/theme/theme.dart';
 
-void main() {
+void main() async{
+  await Hive.initFlutter();
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
